@@ -1,10 +1,9 @@
-#300 SCADA Server 1 [network]
-#100 SCADA Server 2 [network]
-#700 SCADA Server 3 [network]
-
 ##Task
+
 Figure out the logic of Super Secured SCADA Python Server and get the 
 flags! ip: 119.81.178.102:1337
+
+#300 SCADA Server 1 [network]
 
 0. Подключаемся к серверу и пытаемся ввести некоторые стандартные команды.
 Мне удалось найти только `help` (который не выводил ничего полезного) и
@@ -24,7 +23,7 @@ flags! ip: 119.81.178.102:1337
 
 Первое задание решено.
 
-Второе задание:
+#100 SCADA Server 2 [network]
 
 Смотрим код [server.py](server.py). После беглого просмотра видим
 открытие файла `private/flag_ki_ctf_2016_telnet.txt`. Очевидно, там флаг. 
@@ -33,7 +32,7 @@ flags! ip: 119.81.178.102:1337
 что в текущей директории тоже есть файл с таким названием. 
 Задание решено.
 
-Третье задание:
+#700 SCADA Server 3 [network]
 
 0. Находим в коде [server.py](server.py) обработку команды `login`.
 Работает это следующим образом:
